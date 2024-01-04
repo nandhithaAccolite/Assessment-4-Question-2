@@ -1,0 +1,10 @@
+<h1>Angular Convert Number to Word</h1>
+<div class="container">
+  <br />
+  <div class="input-container">
+    <label for="mynumber">Enter a number:</label>
+    <input type="number" id="mynumber" name="mynumber" [(ngModel)]="mynumber" />
+  </div>
+  <h1 class="output" *ngIf="dispaly">{{ outputWords }}</h1>
+  <button type="button" (click)="convertToWord()" class="convert-button">Convert to String</button>
+</div>
